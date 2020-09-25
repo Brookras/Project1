@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![Red team network topology](https://github.com/bryce-2020/Project1/blob/master/images/project_1_Diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the 'filebeat-playbook.yml' file may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
@@ -21,10 +21,13 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly redundant, in addition to restricting un authorized access to the network.
+- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
+The main purpose of the load balancer is to help ensure the network has redundancy.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+The purpose of the jump box is to have access to the a limited network with access only through a sing IP and machine.
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the Log data and system Statistics.
 What does Filebeat watch for? System Logs
 What does Metricbeat record? 
 
@@ -42,11 +45,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the ELK Server machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: Dynamic IP 13.90.28.185
-Add whitelisted IP addresses: 
+Only the ELK Server machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: Dynamic IP 198.233.230.170
 
 Machines within the network can only be accessed by SSH.
-- _TODO: Which machine did you allow to access your ELK VM: personal Machines What was its IP address: 73.151.134.236
+- _TODO: Which machine did you allow to access your ELK VM: personal Machines What was its IP address: 10.0.0.7
 
 A summary of the access policies in place can be found in the table below.
 
@@ -60,16 +62,16 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- _TODO: What is the main advantage of automating configuration with Ansible?
+The advantages of using Ansible, it allows quick deployment of applications or containers. It also has a function of instead of writing specific code per machine you can wite a playbook and apply it to all machines in the resource group.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
+Install the pip3 file, install ansible docker python module to increase the virtual memory of the ELK VM then tell the ELK VM to use that new allocated memory. Finally launch the elk docker container.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Sudo Docker ps]((https://github.com/bryce-2020/Project1/blob/master/images/)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
