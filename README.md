@@ -98,7 +98,9 @@ http://40.71.89.218:5601/app/kibana
 [Kibana](https://github.com/bryce-2020/Project1/blob/master/images/images/kibana_systemlog_success.png.PNG)
 
 ### Downloadable Playbook commands
-filebeat-configuration.yml 'curl https://github.com/bryce-2020/Project1/blob/master/images/
+filebeat-config.yml 'curl https://github.com/bryce-2020/Project1/blob/master/Ansible_YML_Scripts/filebeat-config.yml
+
+
 
 
 
