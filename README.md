@@ -92,11 +92,21 @@ SSH into the control node and follow the steps below:
 - Copy the install-elk.yml file to /etc/ansible/Files1.
 - Update the hosts file to include the IP adresses of the VMs you want to run the playbooks.
 - Run the playbook, and navigate to kibana to check if the installation worked.
+
 this is the kibana URL where you can check the ELK data.
 http://40.71.89.218:5601/app/kibana
+[Kibana](https://github.com/bryce-2020/Project1/blob/master/images/images/kibana_systemlog_success.png.PNG)
 
 ### Downloadable Playbook commands
-_TODO: Answer the following questions to fill in the blanks:_
+filebeat-configuration.yml 'curl https://github.com/bryce-2020/Project1/blob/master/images/
+
+
+
+
+
+
+
+
 install-elk.ym 'curl https://github.com/bryce-2020/Project1/blob/master/images/install-elk.yml > /etc/ansible/Files1/install-elk.yml
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
