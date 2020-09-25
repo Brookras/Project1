@@ -71,8 +71,7 @@ Install the pip3 file, install ansible docker python module to increase the virt
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Sudo Docker ps]((https://github.com/bryce-2020/Project1/blob/master/images/sudo_docker_ps.png
-)
+![Sudo Docker ps](https://github.com/bryce-2020/Project1/blob/master/images/sudo_docker_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
